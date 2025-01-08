@@ -1,0 +1,75 @@
+@use "variables";
+@use "mixins";
+// Header
+header {
+  @include mixins.flex-center;
+  justify-content: space-between;
+  background-color: variables.$default-text-color;
+  color: variables.$navbar-text-color;
+  padding: variables.$padding;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: variables.$padding;
+
+    a {
+      color: variables.$navbar-text-color;
+      text-decoration: none;
+      @include mixins.hover-effect;
+    }
+  }
+
+  .search-bar {
+    display: flex;
+    gap: variables.$padding;
+
+    input {
+      padding: 8px;
+    }
+    button {
+      padding: 8px 16px;
+      border: none;
+      background-color: variables.$div-background-color;
+      color: variables.$navbar-text-color;
+      cursor: pointer;
+
+      @include mixins.hover-effect;
+    }
+  }
+}
+
+.grid-section {
+  padding: variables.$padding;
+
+  .grid-container {
+    display: flex;
+    gap: variables.$padding;
+
+    .grid-item {
+      flex: 1;
+      background-color: variables.$div-background-color;
+      color: variables.$padding;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: variables.$margin;
+      }
+    }
+  }
+}
+
+// Foopter
+footer {
+  background-color: variables.$default-text-color;
+  color: variables.$background-color;
+  text-align: center;
+  padding: variables.$padding;
+}

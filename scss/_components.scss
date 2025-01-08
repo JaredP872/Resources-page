@@ -1,0 +1,38 @@
+@use "variables";
+@use "mixins";
+
+.section-title {
+  text-align: center;
+  margin-bottom: variables.$margin h1 {
+    font: 2rem;
+    color: variables.$default-text-color;
+  }
+
+  .image-card {
+    text-align: center;
+    img {
+      max-width: 300px;
+      height: auto;
+      border: 1px solid variables.$default-text-color;
+    }
+  }
+}
+
+.text-row {
+  display: flex;
+  flex-direction: column;
+
+  .text-row-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    margin: 150px;
+    flex-wrap: wrap;
+
+    p {
+      text-align: center;
+      color: variables.$default-text-color;
+    }
+  }
+}

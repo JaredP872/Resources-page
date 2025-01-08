@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #3d3d3d;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+a:hover {
+  background-color: #b3fffc;
+  color: #3d3d3d;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3d3d3d;
+  color: #ffffff;
+  padding: 16px;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+header .nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header .nav-links a:hover {
+  background-color: #b3fffc;
+  color: #3d3d3d;
+}
+header .search-bar {
+  display: flex;
+  gap: 16px;
+}
+header .search-bar input {
+  padding: 8px;
+}
+header .search-bar button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #739596;
+  color: #ffffff;
+  cursor: pointer;
+}
+header .search-bar button:hover {
+  background-color: #b3fffc;
+  color: #3d3d3d;
+}
+
+.grid-section {
+  padding: 16px;
+}
+.grid-section .grid-container {
+  display: flex;
+  gap: 16px;
+}
+.grid-section .grid-container .grid-item {
+  flex: 1;
+  background-color: #739596;
+  color: 16px;
+  text-align: center;
+}
+.grid-section .grid-container .grid-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+footer {
+  background-color: #3d3d3d;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 16px h1;
+  margin-bottom-font: 2rem;
+  margin-bottom-color: #3d3d3d;
+}
+.section-title .image-card {
+  text-align: center;
+}
+.section-title .image-card img {
+  max-width: 300px;
+  height: auto;
+  border: 1px solid #3d3d3d;
+}
+
+.text-row {
+  display: flex;
+  flex-direction: column;
+}
+.text-row .text-row-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+  margin: 150px;
+  flex-wrap: wrap;
+}
+.text-row .text-row-items p {
+  text-align: center;
+  color: #3d3d3d;
+}
+
+/*# sourceMappingURL=styles.css.map */

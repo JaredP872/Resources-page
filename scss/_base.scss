@@ -1,0 +1,24 @@
+@use "variables";
+@use "mixins";
+
+// Reset styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Global styles
+body {
+  font-family: variables.$font-family;
+  background-color: variables.$background-color;
+  color: variables.$default-text-color;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$default-text-color;
+
+  @include mixins.hover-effect;
+}
